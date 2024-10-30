@@ -12,6 +12,6 @@ int main(){
         }
         sum += jiecheng;
     }
-    printf("The sum of factorials is:%d",sum);
+    printf("The sum of factorials is: %d",sum);
     return 0;
 }

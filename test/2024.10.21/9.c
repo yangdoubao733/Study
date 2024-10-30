@@ -2,10 +2,10 @@
 #include<math.h>
 
 int main(){
-    int n,temp;
+    int n,m;
     scanf("%d",&n);
     float a[n][2];
-    float x0,y0,tan;
+    float x0,y0,tan,temp;
     double r[n][2];
     for(int i=0;i<n;i++){
         scanf("%f %f",&a[i][0],&a[i][1]);
@@ -59,8 +59,8 @@ int main(){
     }
     printf("The counterclockwise arrangement of the %d-gon is:",n);
     for(int i=0;i<n;i++){
-        temp = r[i][1];
-        printf(" (%.2f, %.2f)",a[temp][0],a[temp][1]);
+        m = r[i][1];
+        printf(" (%.2f, %.2f)",a[m][0],a[m][1]);
     }
     return 0;
 }

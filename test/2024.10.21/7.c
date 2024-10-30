@@ -13,7 +13,7 @@ int main(){
             isVoid = 1;
             word += 1;
         }
-        if(a[i] != ' ')isVoid = 0;
+        if(a[i] != ' ' && a[i] != '\n')isVoid = 0;
     }
     if(isVoid == 1)word -= 1;
     printf("the total word is %d\nthe total sentence is %d",word+1,sentence);
