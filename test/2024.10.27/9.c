@@ -7,17 +7,17 @@ double distance(double x1,double y1,double x2,double y2){
 }
 int main(){
     int n;
-    double x1,y1,x2,y2,r1,r2,min1,min2,max1,max2;
+    double x1,y1,x2,y2,r1,r2,max1,max2;
     scanf("%lf %lf %lf %lf",&x1,&y1,&x2,&y2);
     scanf("%d",&n);
     double xy[n][3];
     double d1[n],d2[n];
-    for(int i=0;i<n;i++){
-        scanf("%lf %lf",&xy[i][0],&xy[i][1]); //输入导弹坐标
+    for(int i=0;i<n;i++){//输入导弹坐标
+        scanf("%lf %lf",&xy[i][0],&xy[i][1]); 
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){//求每个防空炮到各个导弹的距离
         d1[i] = distance(x1,y1,xy[i][0],xy[i][1]);
-        d2[i] = distance(x2,y2,xy[i][0],xy[i][1]);  //求每个防空炮到各个导弹的距离
+        d2[i] = distance(x2,y2,xy[i][0],xy[i][1]);  
     }
     max1 = d1[0];
     max2 = d2[0];
@@ -32,13 +32,13 @@ int main(){
     r2 = max2;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
-            for(int a=0;a<n;a++){
-                if(d1[i] >= d1[a])xy[a][2] = 1; //判断导弹是否被拦截
+            for(int a=0;a<n;a++){//判断导弹是否被拦截
+                if(d1[i] >= d1[a])xy[a][2] = 1; 
                 if(d2[j] >= d2[a])xy[a][2] = 1;
             }
             int target = 1;
-            for(int a=0;a<n;a++){
-                if(xy[a][2] == 0)target = 0; //判断是否全部拦截
+            for(int a=0;a<n;a++){//判断是否全部拦截
+                if(xy[a][2] == 0)target = 0; 
             }
             if(target == 1 && (pow(d1[i],2)+pow(d2[j],2)) < pow(r1,2)+pow(r2,2)){ //全部拦截且代价更小，则更新代价半径
                 r1 = d1[i];
