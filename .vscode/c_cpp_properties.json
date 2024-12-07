@@ -4,9 +4,7 @@
             "name": "windows-gcc-x64",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/msys2/ucrt64/include/**",
-                "C:\\Users\\yangdoubao\\Documents\\GitHub\\Study\\C Project",
-                "${workspaceFolder}/C Project/CourseSelectionSystem"
+                "D:/msys2/ucrt64/include/**"
             ],
             "compilerPath": "gcc",
             "cStandard": "c99",

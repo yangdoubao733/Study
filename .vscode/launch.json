@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/yangdoubao/Documents/GitHub/Study/C Project/CourseSelectionSystem",
-      "program": "c:/Users/yangdoubao/Documents/GitHub/Study/C Project/CourseSelectionSystem/build/Debug/outDebug",
+      "cwd": "c:/Users/yangdoubao/Documents/GitHub/Study/Homework/2024.11.27",
+      "program": "c:/Users/yangdoubao/Documents/GitHub/Study/Homework/2024.11.27/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
