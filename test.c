@@ -3,7 +3,7 @@
 
 
 int main(){
-    char* a;
-    a="aaa";
+    char a[10];
+    scanf("%s",a);
     printf("%s",a);
 }
